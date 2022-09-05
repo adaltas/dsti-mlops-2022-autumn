@@ -13,11 +13,11 @@
 **Instructions:**
 
 1. [Install DVC](https://dvc.org/doc/install) inside `env_mlops`: `pip install dvc`
-2. Copy the data file `wine_original.csv` to your computer
-3. Demo of data versioning with DVC will be executed by the teacher (code below):
-  - Creation of DVC repo
-  - Creation of two different versions of the same dataset
-  - Versioning of the metadata with Git
+2. Copy the data file `wine_original.csv` to your computer (use `clone` or download the whole repository)
+3. Execute the commands below. Make sure to understand what they do:
+  - Create of DVC repo
+  - Create of two different versions of the same dataset
+  - Version of the metadata with Git
 4. Go to your GitHub account and check out the tags. How would you add the descriptions to them to improve data cataloging?
 5. Students: Create another version of the dataset the same way as it was shown. Pay attention to which files are being created and DVC/Git roles!
 6. Install pandas, sklearn, jupyter notebook:
@@ -65,15 +65,15 @@ Start tracking the dataset with DVC:
 dvc add data/wine_original.csv
 ```
 
-Check the files that appeared in `data/` (visible and hidden) and explore them:
+Check the files that appeared in `data/` (visible and hidden) and explore them with your favourite text editor or print the content to the terminal with `cat` command:
 
 ```bash
 ls -l
 ls -a
 ls -l data/
 ls -a data/
-vim data/wine_original.csv.dvc
-vim data/.gitignore
+cat data/wine_original.csv.dvc
+cat data/.gitignore
 ```
 
 Track metadata with git:
