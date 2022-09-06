@@ -1,4 +1,4 @@
-# dsti-mlops-2022-spring
+# dsti-mlops-2022-autumn
 The material for MLOps courses and labs.
 
 When thinking about the internship, check out the following links. To make sure you don't miss the internship publicatons, subscribe to the newsletter (not a spam) and/or follow Adaltas on LinkedIn. For more information, contact David or me directly.  
