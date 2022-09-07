@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
 5. Run it in the terminal (be careful of folders and virt. env): `python main.py`
 6. Open the link written in the terminal and add `/test`
-7. Leave this running and open new terminal to continue the lab. Don't forget to activate the virtual environmen in the new terminal: `conda activate env_wine_app`.  
+7. You can leave this running and open new terminal to continue the lab, or close it. Don't forget to activate the virtual environment, whenever you open new terminal window: `conda activate env_wine_app`.  
 8. In `wine_app` directory, create sub-directory `model_files`: `mkdir model_files`
 9. Inside `model_files` create `ml_model.py` and copy inside the `predict_wine_quality`function (above) 
 10. Copy pickled model `model.bin` to `model_files`
@@ -125,7 +125,7 @@ r.text.strip()
 print(r.text.strip())
 ```
 
-When you run it, it should return a list with predictions.
+When you run it, it should return a list with predictions. If you get an error saying thet the module `requests` was not found, `pip install requests` and run it again.
 
 **NOTE:** If you didn't run the `main.py` before and left it running, this will not work!
 
