@@ -63,11 +63,12 @@ if __name__ == '__main__':
 
 5. Run it in the terminal (be careful of folders and virt. env): `python main.py`
 6. Open the link written in the terminal and add `/test`
-7. Create directory `model_files`: `mkdir model_files`
-8. Inside `model_files` create `ml_model.py` and copy inside the `predict_wine_quality`function (above) 
-9. Copy pickled model `model.bin` to `model_files`
-10. In `model_files`, create empty `__init__.py` file to indicate that the directory is a package.
-11. Go back to the `main.py` and add the following code:
+7. Leave this running and open new terminal to continue the lab. Don't forget to activate the virtual environmen in the new terminal: `conda activate env_wine_app`.  
+8. Create directory `model_files`: `mkdir model_files`
+9. Inside `model_files` create `ml_model.py` and copy inside the `predict_wine_quality`function (above) 
+10. Copy pickled model `model.bin` to `model_files`
+11. In `model_files`, create empty `__init__.py` file to indicate that the directory is a package.
+12. Go back to the `main.py` and add the following code:
 
 Imports:
 ```python
@@ -99,7 +100,7 @@ def predict():
 ```
 
 12. Save and go to the terminal. Close the terminal window running from before (from the `main.py /test` test). If needed, reactivate the `env_wine_app` and go to the  `wine_app` directory. There, run `main.py`.
-13. Open new text file (doesn't matter where) and copy inside (`test_app_locally.py`):
+13. Open new text file (doesn't matter where) and copy inside (`test_app_locally.py`): 
 
 ```python
 new_data = {
