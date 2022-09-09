@@ -26,27 +26,26 @@ Before you can start the lab, you have to:
 
 ## 2. Write a Dockerfile and build a Docker image
 
-1. Open [`assets/hello-python`](assets/hello-python) directory and check out the `hello_world.py` and `Dockerfile` files
+1. Navigate to the `assets/hello-world-python` directory in the cloned repository and check out the `hello_world.py` and `Dockerfile` files
 2. Check out the explanations for each line in the Dockerfile from [the documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#dockerfile-instructions) 
 3. Build the docker container   
   1. Open a terminal (CMD or PowerShell for Windows)
-  2. Navigate to the [`assets/hello-python`](assets/hello-python) directory in the cloned repository
-  3. Run the following command:
+  2. Run the following command:
      ```
-     docker build -t hello-python .
+     docker build -t my-first-docker-image .
      ```
      - Don't forget the `.` at the end of the command. It is here to tell Docker it should look for the `Dockerfile` in the current directory. 
-     - `-t` tag - to build container with the name you want (here `hello-python`)
-4. Check if your Docker container appears in the local Docker images:
+     - `-t` tag - to build container with the name you want (here `my-first-docker-image`)
+3. Check if your Docker container appears in the local Docker images:
    ```
    docker images
    ```
- 5. Run the container with: 
+ 4. Run the container with: 
     ```
-    docker run hello-python
+    docker run my-first-docker-image
     ```
- 6. Check all the running containers: `docker ps`. Do you see yours? Why?
- 7. Run `docker ps -a` to list all existing containers. Compare restarting one with `docker start <name-of-container>` or `docker start -a <name-of-container>`.    
+ 5. Check all the running containers: `docker ps`. Do you see yours? Why?
+ 6. Run `docker ps -a` to list all existing containers. Compare restarting one with `docker start <name-of-container>` or `docker start -a <name-of-container>`.    
 
 ## 3. Run a Docker container with multiple options
 
@@ -55,12 +54,12 @@ Before you can start the lab, you have to:
 
 ## 4. Share your Docker container with a classmate
 
-1. Modify the message printed in the `hello-python` (you can add your name for example).
+1. Modify the message printed in the `my-first-docker-image` (you can add your name for example).
 2. Rebuild the Docker container (with a different name) with this modified code and see if you can run it.
 3. Register on [Docker Hub](https://hub.docker.com/).
 4. Tag your container with the following command:
    ```
-   docker tag hello-python-dsti <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
+   docker tag hello-dsti <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
    ```
    where `DOCKER_ACCOUNT_NAME` - is your account on Docker Hub, `CUSTOM_IMAGE_NAME` - the custom name of the image.
 5. Log in to Docker Hub from your terminal:
