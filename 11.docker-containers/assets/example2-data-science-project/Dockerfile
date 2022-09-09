@@ -26,4 +26,4 @@ VOLUME /app
 CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
 
 # Build the contaner: docker build -t test-mount .
-# Run the container: docker run -p 9999:8888 -v  /Users/adaltas/Documents/teaching_material/mlops/2022_autumn/dsti-mlops-2022-spring-main/11.docker-containers/assets/workflow2-data-science-project:/app test-mount
+# Run the container (**be sure to replace <directory-with-the-lab> with your own path!**): docker run -p 9999:8888 -v  /<directory-with-the-lab>:/app test-mount
